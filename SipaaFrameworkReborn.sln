@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipaaFrameworkReborn", "SipaaFrameworkReborn\SipaaFrameworkReborn.csproj", "{E40889E5-EAB4-417B-8D60-25FF881D4942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipaaFrameworkTestFormLauncher", "SipaaFrameworkTestFormLauncher\SipaaFrameworkTestFormLauncher.csproj", "{B3B7C8BE-7FF7-4A20-8988-521F13B3A7ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipaaIconCreator", "SipaaIconCreator\SipaaIconCreator.csproj", "{38DB70B9-96F3-49B2-8122-89585B000DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E40889E5-EAB4-417B-8D60-25FF881D4942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40889E5-EAB4-417B-8D60-25FF881D4942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40889E5-EAB4-417B-8D60-25FF881D4942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40889E5-EAB4-417B-8D60-25FF881D4942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B7C8BE-7FF7-4A20-8988-521F13B3A7ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B7C8BE-7FF7-4A20-8988-521F13B3A7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B7C8BE-7FF7-4A20-8988-521F13B3A7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B7C8BE-7FF7-4A20-8988-521F13B3A7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38DB70B9-96F3-49B2-8122-89585B000DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38DB70B9-96F3-49B2-8122-89585B000DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38DB70B9-96F3-49B2-8122-89585B000DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38DB70B9-96F3-49B2-8122-89585B000DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EF75839-B9A4-4E10-AB1E-64A43D972CA8}
+	EndGlobalSection
+EndGlobal
