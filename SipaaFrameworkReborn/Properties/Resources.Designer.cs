@@ -63,6 +63,46 @@ namespace SipaaFrameworkReborn.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendarDark {
+            get {
+                object obj = ResourceManager.GetObject("calendarDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendarWhite {
+            get {
+                object obj = ResourceManager.GetObject("calendarWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CloseButtonNormal {
+            get {
+                object obj = ResourceManager.GetObject("CloseButtonNormal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_collapse_arrow_96px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_collapse_arrow_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_done_24px {
             get {
                 object obj = ResourceManager.GetObject("icons8_done_24px", resourceCulture);
@@ -76,6 +116,16 @@ namespace SipaaFrameworkReborn.Properties {
         internal static System.Drawing.Bitmap icons8_done_24px_black {
             get {
                 object obj = ResourceManager.GetObject("icons8_done_24px_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_expand_arrow_96px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_expand_arrow_96px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

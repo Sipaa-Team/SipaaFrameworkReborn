@@ -14,7 +14,7 @@ namespace SipaaFrameworkReborn
     public partial class SForm : Form
     {
         private int bra = 20;
-
+        public event EventHandler IconChanger;
         public int BorderRadius
         {
             get { return bra; }
@@ -30,8 +30,18 @@ namespace SipaaFrameworkReborn
                 return cp;
             }
         }
+        public new Icon Icon
+        {
+            get { return base.Icon; }
+            set
+            {
+                base.Icon = value;
+                if (IconChanger != null) { IconChanger.Invoke(this, new EventArgs()); }
+            }
+        }
         public SForm()
         {
+            
             InitializeComponent();
             this.KeyDown += SForm_KeyDown;
         }
@@ -57,6 +67,16 @@ namespace SipaaFrameworkReborn
                 path.AddArc(new Rectangle(0, Height - bra, bra, bra), 90, 90);
                 this.Region = new Region(path);
             }
+        }
+
+        private void SForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sGradientButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

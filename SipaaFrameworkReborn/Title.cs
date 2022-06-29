@@ -13,6 +13,18 @@ namespace SipaaFrameworkReborn
     public partial class Title : UserControl
     {
         string text = "Title";
+        StringAlignment ha = StringAlignment.Near;
+        StringAlignment va = StringAlignment.Near;
+        public StringAlignment HorizontalAlignment
+        {
+            get { return ha; }
+            set { ha = value; Invalidate(); }
+        }
+        public StringAlignment VerticalAlignment
+        {
+            get { return va; }
+            set { va = value; Invalidate(); }
+        }
         public string TitleText
         {
             get { return text; }
@@ -22,7 +34,8 @@ namespace SipaaFrameworkReborn
         {
             base.OnPaint(e);
 
-            e.Graphics.DrawString(TitleText, Font, new SolidBrush(ForeColor), 0,0);
+
+            e.Graphics.DrawString(TitleText, Font, new SolidBrush(ForeColor), ClientRectangle, new StringFormat() { LineAlignment = ha, Alignment = va });
         }
         public Title()
         {

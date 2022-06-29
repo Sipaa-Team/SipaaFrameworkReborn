@@ -37,6 +37,7 @@ namespace SipaaFrameworkReborn
         {
             return textlength * (int)font.Size;
         }
+        
         protected override void OnPaint(PaintEventArgs e)
         {
             // Draw default button
@@ -46,12 +47,20 @@ namespace SipaaFrameworkReborn
             //Clear the Windows button graphics
             e.Graphics.Clear(Parent.BackColor);
             // Draw the button base
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(new Rectangle(0, 0, bra, bra), 180, 90);
-            path.AddArc(new Rectangle(Width - bra, 0, bra, bra), -90, 90);
-            path.AddArc(new Rectangle(Width - bra, Height - bra, bra, bra), 0, 90);
-            path.AddArc(new Rectangle(0, Height-bra, bra, bra), 90, 90);
-            e.Graphics.FillPath(new LinearGradientBrush(ClientRectangle, BackColor, sbc, a), path);
+            if (bra < 2)
+            {
+                e.Graphics.FillRectangle(new LinearGradientBrush(ClientRectangle, BackColor, sbc, a), ClientRectangle);
+            }
+            else
+            {
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(new Rectangle(0, 0, bra, bra), 180, 90);
+                path.AddArc(new Rectangle(Width - bra, 0, bra, bra), -90, 90);
+                path.AddArc(new Rectangle(Width - bra, Height - bra, bra, bra), 0, 90);
+                path.AddArc(new Rectangle(0, Height-bra, bra, bra), 90, 90);
+                e.Graphics.FillPath(new LinearGradientBrush(ClientRectangle, BackColor, sbc, a), path);
+            }
+            
             // Draw text with his font
             e.Graphics.DrawString(Text, Font, new SolidBrush(ForeColor),ClientRectangle, new StringFormat() { LineAlignment = StringAlignment.Center, Alignment = StringAlignment.Center } );
         }
