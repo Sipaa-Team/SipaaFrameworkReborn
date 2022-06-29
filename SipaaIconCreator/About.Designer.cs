@@ -40,12 +40,14 @@ namespace SipaaIconCreator
             // title1
             // 
             this.title1.Font = new System.Drawing.Font("Segoe UI", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title1.HorizontalAlignment = System.Drawing.StringAlignment.Near;
             this.title1.Location = new System.Drawing.Point(15, 15);
             this.title1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.title1.Name = "title1";
             this.title1.Size = new System.Drawing.Size(268, 29);
             this.title1.TabIndex = 2;
             this.title1.TitleText = "About";
+            this.title1.VerticalAlignment = System.Drawing.StringAlignment.Near;
             // 
             // sButton1
             // 
@@ -63,42 +65,50 @@ namespace SipaaIconCreator
             // title2
             // 
             this.title2.Font = new System.Drawing.Font("Segoe UI", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title2.HorizontalAlignment = System.Drawing.StringAlignment.Near;
             this.title2.Location = new System.Drawing.Point(15, 56);
-            this.title2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.title2.Margin = new System.Windows.Forms.Padding(6);
             this.title2.Name = "title2";
             this.title2.Size = new System.Drawing.Size(268, 25);
             this.title2.TabIndex = 4;
             this.title2.TitleText = "Sipaa Icon Maker (1.0.2, build 10)";
+            this.title2.VerticalAlignment = System.Drawing.StringAlignment.Near;
             // 
             // title3
             // 
             this.title3.Font = new System.Drawing.Font("Segoe UI", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title3.HorizontalAlignment = System.Drawing.StringAlignment.Near;
             this.title3.Location = new System.Drawing.Point(15, 93);
             this.title3.Margin = new System.Windows.Forms.Padding(6);
             this.title3.Name = "title3";
             this.title3.Size = new System.Drawing.Size(364, 25);
             this.title3.TabIndex = 5;
             this.title3.TitleText = "With only 2 colors, an number and an image, you can";
+            this.title3.VerticalAlignment = System.Drawing.StringAlignment.Near;
             // 
             // title4
             // 
             this.title4.Font = new System.Drawing.Font("Segoe UI", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title4.HorizontalAlignment = System.Drawing.StringAlignment.Near;
             this.title4.Location = new System.Drawing.Point(15, 120);
             this.title4.Margin = new System.Windows.Forms.Padding(6);
             this.title4.Name = "title4";
             this.title4.Size = new System.Drawing.Size(364, 25);
             this.title4.TabIndex = 6;
             this.title4.TitleText = "make your own icons like the SipaaOS Icons";
+            this.title4.VerticalAlignment = System.Drawing.StringAlignment.Near;
             // 
             // title5
             // 
             this.title5.Font = new System.Drawing.Font("Segoe UI", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title5.HorizontalAlignment = System.Drawing.StringAlignment.Near;
             this.title5.Location = new System.Drawing.Point(15, 250);
             this.title5.Margin = new System.Windows.Forms.Padding(6);
             this.title5.Name = "title5";
             this.title5.Size = new System.Drawing.Size(364, 25);
             this.title5.TabIndex = 7;
             this.title5.TitleText = "Builded using new Sipaa Framework Reborn";
+            this.title5.VerticalAlignment = System.Drawing.StringAlignment.Near;
             // 
             // About
             // 

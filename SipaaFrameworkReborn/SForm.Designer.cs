@@ -29,7 +29,13 @@ namespace SipaaFrameworkReborn
         /// </summary>
         private void InitializeComponent()
         {
+            this.helloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SuspendLayout();
+            // 
+            // helloToolStripMenuItem
+            // 
+            this.helloToolStripMenuItem.Name = "helloToolStripMenuItem";
+            this.helloToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
             // 
             // SForm
             // 
@@ -38,11 +44,14 @@ namespace SipaaFrameworkReborn
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SForm";
-            this.Text = "SForm";
+            this.Text = "CustomScrollBar Enabled";
+            this.Load += new System.EventHandler(this.SForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+        
+        private System.Windows.Forms.ToolStripMenuItem helloToolStripMenuItem;
     }
 }

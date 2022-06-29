@@ -47,15 +47,24 @@ namespace SipaaFrameworkReborn
             base.OnPaint(pevent);
 
             Rectangle rectSurface = this.ClientRectangle;
-            using (GraphicsPath pathSurface = GetFigurePath(rectSurface, borderRadius))
-            using (Pen penSurface = new Pen(this.Parent.BackColor))
+            Pen penSurface = new Pen(this.Parent.BackColor);
+            SolidBrush brushSurface = new SolidBrush(this.BackColor);
+            if (borderRadius < 2)
             {
-                pevent.Graphics.SmoothingMode = SmoothingMode.HighQuality;
-                //Button surface
-                this.Region = new Region(pathSurface);
-                //Draw surface border for HD result
-                pevent.Graphics.DrawPath(penSurface, pathSurface);
+                pevent.Graphics.FillRectangle(brushSurface, ClientRectangle);
             }
+            else
+            {
+                using (GraphicsPath pathSurface = GetFigurePath(rectSurface, borderRadius))
+                {
+                    pevent.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+                    //Button surface
+                    this.Region = new Region(pathSurface);
+                    //Draw surface border for HD result
+                    pevent.Graphics.DrawPath(penSurface, pathSurface);
+                }
+            }
+            
         }
 
         [Category("Sipaa")]

@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace SipaaFrameworkReborn
 {
+    [ToolboxBitmap(typeof(Button))]
     public class SButton : Button
     {
         int bra = 20;
@@ -30,13 +31,20 @@ namespace SipaaFrameworkReborn
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             //Clear the Windows button graphics
             e.Graphics.Clear(Parent.BackColor);
-            // Draw the button base
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(new Rectangle(0, 0, bra, bra), 180, 90);
-            path.AddArc(new Rectangle(Width - bra, 0, bra, bra), -90, 90);
-            path.AddArc(new Rectangle(Width - bra, Height - bra, bra, bra), 0, 90);
-            path.AddArc(new Rectangle(0, Height-bra, bra, bra), 90, 90);
-            e.Graphics.FillPath(new SolidBrush(BackColor), path);
+            if (bra < 2)
+            {
+                SolidBrush s = new SolidBrush(BackColor);
+                e.Graphics.FillRectangle(s, ClientRectangle);
+            }
+            else
+            {
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(new Rectangle(0, 0, bra, bra), 180, 90);
+                path.AddArc(new Rectangle(Width - bra, 0, bra, bra), -90, 90);
+                path.AddArc(new Rectangle(Width - bra, Height - bra, bra, bra), 0, 90);
+                path.AddArc(new Rectangle(0, Height - bra, bra, bra), 90, 90);
+                e.Graphics.FillPath(new SolidBrush(BackColor), path);
+            }
             // Draw text with his font
             e.Graphics.DrawString(Text, Font, new SolidBrush(ForeColor),ClientRectangle, new StringFormat() { LineAlignment = StringAlignment.Center, Alignment = StringAlignment.Center } );
         }
