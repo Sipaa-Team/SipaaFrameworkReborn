@@ -4,7 +4,7 @@ Sipaa Framework is here, New controls!
 
 The framework in action :
 
-![image](https://user-images.githubusercontent.com/81994075/175926004-aa724600-d9ee-425d-a5cc-404bd966b0ff.png)
+![image](https://user-images.githubusercontent.com/81994075/176878605-3fe146ee-febc-4b8f-bf16-19a4a966189e.png)
 
 With the reborn of Sipaa Framework, we include an icon generator for your programs!
 
